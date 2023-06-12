@@ -1,0 +1,123 @@
+.main-content{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 430px 1fr;
+    grid-template-rows: 370px 1fr;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    border: 4px rgb(108, 75, 255) solid;
+    margin: 0px 16px 0px 16px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+}
+.toilet-image-container{
+    border: 4px rgb(108, 75, 255) solid;
+    display: flex;
+    border-radius: 4px;
+}
+.toilet-image{
+    display: inline-block;
+    width: 100%;
+}
+
+.toilet-discription-title{
+    background-color: rgb(108, 75, 255);
+    border-bottom: 4px rgb(108, 75, 255) solid;
+}
+
+.toilet-discription-title-text{
+    margin-left: 16px;
+    color: white;
+}
+
+@media (max-width: 1260px) {
+    .toilet-discription{
+        font-size: 13px;
+    }
+    .main-content{
+        grid-template-columns: 430px 1fr;
+        grid-template-rows: 370px 1fr;
+    }
+    .toilet-ad{
+        font-size: 24px;
+    }
+    .toilet-button{
+        padding: 20px 160px 20px 160px;
+    }
+}
+
+@media (min-width: 1261px) and (max-width: 1599px){
+    .toilet-discription{
+        font-size: 19px;
+    }
+    .main-content{
+        grid-template-columns: 530px 1fr;
+        grid-template-rows: 530px 1fr;
+    }
+    .toilet-ad{
+        font-size: 34px;
+        margin-top: 49px;
+        margin-bottom: 0;
+    }
+    .toilet-button{
+        padding: 40px 210px 40px 210px;
+        margin-top: 49px;
+    }
+}
+
+@media (min-width: 1600.1px) {
+    .toilet-discription{
+        font-size: 26px;
+    }
+    .main-content{
+        grid-template-columns: 630px 1fr;
+        grid-template-rows: 750px 1fr;
+    }
+    .toilet-ad{
+        font-size: 44px;
+        margin-top: 105px;
+        margin-bottom: 0;
+    }
+    .toilet-button{
+        padding: 60px 260px 60px 260px;
+        margin-top: 105px;
+    }
+}
+
+
+.toilet-discription{
+    padding: 6px;
+    color: white;
+}
+.toilet-button-conatiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toilet-ad{
+    font-weight: bold;
+    text-align: center;
+    color: rgb(108, 75, 255);
+}
+
+.toilet-button{
+    background-color: rgb(108, 75, 255);
+    color: white;
+    font-weight: bold;
+    border: 2px rgb(108, 75, 255) solid;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.15s, background-color 0.15s;
+}
+.toilet-button:hover{
+    color: rgb(108, 75, 255);
+    background-color: rgb(28, 38, 63);
+}
