@@ -107,13 +107,13 @@
         font-size: 32px;
     }
     .main-content{
-        grid-template-columns: 730px 1fr;
+        grid-template-columns: 930px 1fr;
         grid-template-rows: 910px 1fr;
     }
     .toilet-ad{
         font-size: 54px;
-        margin-top: 105px;
-        margin-bottom: 98px;
+        margin-top: 165px;
+        margin-bottom: 158px;
     }
     .toilet-button{
         padding: 80px 260px 80px 260px;
