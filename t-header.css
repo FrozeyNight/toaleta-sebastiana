@@ -3,7 +3,6 @@
     justify-content: space-between;
     position: fixed;
     align-items: center;
-    height: 72px;
     background-color: rgb(108, 75, 255);
     top: 0;
     left: 0;
@@ -11,21 +10,44 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
 }
 .title-header{
-    margin-left: 16px;
     color: white;
-    font-size: 24px;
     font-family: Poppins, Arial;
 }
 .maps-button{
-    margin-right: 16px;
     background-color: white;
     border: 2px white solid;
     border-radius: 4px;
-    padding: 16px 60px 16px 60px;
     cursor: pointer;
     transition: background-color 0.15s, color 0.15s;
 }
 .maps-button:hover{
     background-color: rgb(108, 75, 255);
     color: white;
+}
+
+@media (max-width: 2000px){
+    .header{
+        height: 72px;
+    }
+    .title-header{
+        margin-left: 16px;
+        font-size: 24px;
+    }
+    .maps-button{
+        margin-right: 16px;
+        padding: 16px 60px 16px 60px;
+    }
+}
+@media(min-width: 2000.1px){
+    .header{
+        height: 144px;
+    }
+    .title-header{
+        margin-left: 32px;
+        font-size: 32px;
+    }
+    .maps-button{
+        margin-right: 32px;
+        padding: 32px 90px 32px 90px;
+    }
 }
