@@ -37,7 +37,7 @@
     color: white;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1260px){
     .toilet-discription{
         font-size: 13px;
     }
@@ -50,6 +50,9 @@
     }
     .toilet-button{
         padding: 20px 160px 20px 160px;
+    }
+    .toilet-button-holder .tooltip{
+        top: -30px;
     }
 }
 
@@ -69,9 +72,12 @@
     .toilet-button{
         padding: 40px 210px 40px 210px;
     }
+    .toilet-button-holder .tooltip{
+        top: 0px;
+    }
 }
 
-@media (min-width: 1600.1px) {
+@media (min-width: 1600.1px) and (max-width: 2000px){
     .toilet-discription{
         font-size: 26px;
     }
@@ -87,6 +93,37 @@
     .toilet-button{
         padding: 60px 240px 60px 240px;
         font-size: 20px;
+    }
+    .toilet-button-holder .tooltip{
+        top: 0px;
+    }
+    .toilet-discription-title-text{
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 2000.1px) {
+    .toilet-discription{
+        font-size: 32px;
+    }
+    .main-content{
+        grid-template-columns: 730px 1fr;
+        grid-template-rows: 910px 1fr;
+    }
+    .toilet-ad{
+        font-size: 54px;
+        margin-top: 105px;
+        margin-bottom: 98px;
+    }
+    .toilet-button{
+        padding: 80px 260px 80px 260px;
+        font-size: 20px;
+    }
+    .toilet-button-holder .tooltip{
+        top: 0px;
+    }
+    .toilet-discription-title-text{
+        font-size: 28px;
     }
 }
 
@@ -138,7 +175,6 @@
     padding-right: 8px;
     border-radius: 2px;
     font-size: 24px;
-    top: 30px;
     opacity: 0;
     transition: opacity 0.15s;
     pointer-events: none;
